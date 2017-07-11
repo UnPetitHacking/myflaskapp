@@ -3,6 +3,12 @@
 {% block body %}
     <div class="jumbotron text-center">
         <h1>"Welcome to myflaskapp"</h1>
-        <p class="lead">This app is built on Python Flask framework</p>>
+        <p class="lead">This app is built on Python Flask framework</p>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">Register</a>
+            <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+        <hr>
+        created by Henry Day
     </div>
 {% endblock %}
