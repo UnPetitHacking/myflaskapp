@@ -1,2 +1,3 @@
 # myflaskapp
-A sample project of learning Python flask framework
+A web blog project using flask framework and mysql
+
